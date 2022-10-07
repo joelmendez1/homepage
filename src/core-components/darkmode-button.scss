@@ -1,0 +1,23 @@
+@import "../app-components/variables.scss";
+
+.darkmode-button {
+  margin-right: $space-xs;
+  background: $dark-gray;
+  color: $white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: $font-size-xs;
+  padding: $space-xxs;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.4s;
+    color: $black;
+    background: $very-light-gray;
+    box-shadow: 0 4px 11px $gray;
+  }
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}

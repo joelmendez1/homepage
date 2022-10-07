@@ -1,0 +1,33 @@
+@import "../app-components/variables.scss";
+
+.home-panel {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: $max-size-xl;
+
+  .second-card__button {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-s;
+    padding: $space-xs 0;
+    border-radius: $space-xxs;
+    background: $primary-rgba-color;
+    border-color: transparent;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+      transition: 0.4s;
+      box-shadow: 0 $space-xxs $space-xs $primary-rgb-shadow-color;
+    }
+  }
+}
+@media screen and (max-width: $max-size-l) {
+  .home-panel {
+    display: flex;
+    flex-direction: column;
+  }
+}

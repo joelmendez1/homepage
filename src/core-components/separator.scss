@@ -1,0 +1,23 @@
+@import "../app-components/variables.scss";
+
+.separator {
+  border: 0;
+  border-top: 1px solid #e7eaf3;
+  width: 100%;
+  margin: 0;
+
+  &__margin {
+    &-top {
+      margin-top: $space-s;
+    }
+    &-both {
+      margin-top: $space-s;
+      margin-bottom: $space-s;
+    }
+    &-bot {
+      margin-bottom: $space-s;
+    }
+    &-none {
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../app-components/variables.scss";
+
+.header {
+  text-align: start;
+  margin-left: $space-m;
+  color: $dark-gray;
+  font-weight: $font-weight-s;
+  margin-bottom: $space-s;
+}

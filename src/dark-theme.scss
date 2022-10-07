@@ -1,0 +1,23 @@
+@import "../src/app-components/variables.scss";
+
+.dark-theme {
+  background: rgb(37 42 45 / 98%);
+  color: $very-light-gray;
+
+  .header,
+  .card__title,
+  .detail-row span {
+    color: $very-light-gray;
+  }
+
+  .card,
+  .navbar {
+    background-color: $black;
+  }
+
+  .separator,
+  .stats-info__second-column,
+  .card.border {
+    border-color: $dark-gray;
+  }
+}

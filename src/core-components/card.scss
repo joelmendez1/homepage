@@ -1,0 +1,25 @@
+@import "../app-components/variables.scss";
+
+.card {
+  box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175);
+  border-radius: $space-xs;
+  padding: $space-s;
+  margin: $space-xs;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $white;
+
+  &.border {
+    border: solid 1px #e7eaf3;
+    box-shadow: 0 $space-xs $space-s rgba(189, 197, 209, 0.2);
+  }
+
+  &__title {
+    color: $dark-gray;
+    font-size: $font-size-s;
+    font-weight: $font-weight-m;
+    margin: 0;
+  }
+}

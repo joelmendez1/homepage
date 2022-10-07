@@ -1,0 +1,23 @@
+@import "../app-components/variables.scss";
+
+.link {
+  border: unset;
+  background-color: unset;
+  padding: 0;
+  font-size: $font-size-s;
+  margin-left: $space-xxs;
+  color: $primary-color;
+  cursor: pointer;
+  text-decoration: none;
+
+  &.elipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+  }
+
+  &:hover {
+    color: $secondary-color;
+  }
+}

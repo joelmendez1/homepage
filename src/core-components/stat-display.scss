@@ -1,0 +1,50 @@
+@import "../app-components/variables.scss";
+
+.stat-display {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  &__image {
+    width: 28px;
+    height: auto;
+  }
+
+  &__container {
+    margin-left: $space-xs;
+  }
+
+  &__title {
+    font-size: $font-size-xs;
+    color: $gray;
+    margin: 0;
+    text-align: start;
+    padding-bottom: $space-xxs;
+    font-weight: $font-weight-s;
+  }
+
+  &__link {
+    color: $black;
+    font-size: $font-size-m;
+    text-decoration: none;
+    font-weight: $font-weight-s;
+
+    &:visited {
+      text-decoration: none;
+      color: unset;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__text {
+    color: $gray;
+    margin: 0;
+
+    &.small {
+      font-size: 80%;
+    }
+  }
+}

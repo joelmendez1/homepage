@@ -1,0 +1,113 @@
+@import "./variables.scss";
+
+.footer {
+  width: 100%;
+  font-size: $font-size-s;
+  background-color: $black;
+  color: $white;
+  padding-top: $space-m;
+  padding-bottom: $space-m;
+  margin-top: $space-xxl;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    margin-right: $space-xs;
+    font-size: $font-size-xs;
+  }
+
+  &__logo {
+    width: auto;
+    height: $space-xl;
+  }
+
+  &__metamask-conect-button,
+  &__twitter-button {
+    margin-right: $space-xs;
+    background: $dark-gray;
+    color: $white;
+    border: 1px solid transparent;
+    border-radius: $space-xxs;
+    padding: 4.8px 9.6px;
+    font-size: $font-size-xs;
+    padding: $space-xxs $space-xs;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.4s;
+      color: $black;
+      background: $very-light-gray;
+      box-shadow: 0 4px 11px $gray;
+    }
+  }
+
+  &__twitter-button {
+    font-size: $font-size-xs;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 6.1875rem;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__separator {
+    opacity: 0.2;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: $max-size-xl;
+
+    &__top {
+      display: flex;
+      padding: 0 $space-m;
+    }
+
+    &__bottom {
+      display: flex;
+      padding: 0 $space-m;
+      font-size: $font-size-xs;
+    }
+
+    &__left {
+      width: 50%;
+      display: flex;
+    }
+
+    &__right {
+      width: 50%;
+      height: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__title {
+      font-weight: $font-weight-s;
+      margin-left: $font-size-m;
+      font-size: $font-size-m;
+    }
+
+    &__copyright {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: $max-size-s) {
+  .footer__container {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__right,
+    &__left {
+      width: 100%;
+    }
+  }
+}

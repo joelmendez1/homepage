@@ -1,0 +1,21 @@
+import Card from "../core-components/card";
+import StatsInfo from "../app-components/stats-info";
+
+import "./home-panel.scss";
+
+function HomePage() {
+  return (
+    <>
+      <div className="home-panel">
+        <Card className="first-card" withBorder>
+          <StatsInfo />
+        </Card>
+        <Card className="second-card" title="Test">
+          <div>xd</div>
+        </Card>
+      </div>
+    </>
+  );
+}
+
+export default HomePage;

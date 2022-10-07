@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+.stats-info {
+  display: flex;
+  width: 100%;
+
+  &__separator {
+    margin-top: $space-m;
+    margin-bottom: $space-m;
+  }
+
+  &__first-column {
+    flex: 1;
+    padding-right: $space-m;
+  }
+
+  &__second-column {
+    flex: 1;
+    padding: 0 $space-m 0 $space-m;
+    border-left: 1px solid #e7eaf3;
+    border-right: 1px solid #e7eaf3;
+  }
+
+  &__third-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: $space-m;
+
+    &__title {
+      font-size: $font-size-xs;
+      margin: 0;
+      text-align: start;
+      color: $gray;
+      font-weight: $font-weight-s;
+    }
+
+    &__area {
+      width: 100%;
+      height: 100%;
+      border: 1px solid $black;
+    }
+  }
+
+  &__hidden-separator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $max-size-m) {
+  .stats-info {
+    flex-direction: column;
+
+    &__first-column,
+    &__second-column {
+      padding: 0;
+      border: none;
+    }
+
+    &__third-column {
+      padding: 0;
+
+      &__area {
+        height: $space-xxl;
+      }
+    }
+
+    &__hidden-separator {
+      display: unset;
+    }
+  }
+}

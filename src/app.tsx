@@ -3,9 +3,10 @@ import { Route, Routes } from "react-router-dom";
 
 import Footer from "./app-components/footer";
 import Navbar from "./app-components/navbar";
-import HomePanel from "./panels/home-panel";
-import "./dark-theme.scss";
 import "./app.scss";
+import "./dark-theme.scss";
+import AboutUsPanel from "./panels/about-us-panel";
+import HomePanel from "./panels/home-panel";
 
 export const ThemeContext = createContext({
   theme: "",
@@ -32,6 +33,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<HomePanel />} />
+            <Route path="/about-us" element={<AboutUsPanel />} />
           </Routes>
         </div>
         <Footer />

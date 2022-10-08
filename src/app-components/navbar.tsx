@@ -19,7 +19,7 @@ function Navbar() {
         <nav className="navbar__container__buttons">
           <LinkComponent
             text="About Us"
-            url=""
+            url="/about-us"
             className="navbar__container__buttons__link"
           />
           <LinkComponent

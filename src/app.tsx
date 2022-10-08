@@ -6,6 +6,7 @@ import Navbar from "./app-components/navbar";
 import "./app.scss";
 import "./dark-theme.scss";
 import AboutUsPanel from "./panels/about-us-panel";
+import ContactUsPanel from "./panels/contact-us-panel";
 import HomePanel from "./panels/home-panel";
 
 export const ThemeContext = createContext({
@@ -34,6 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePanel />} />
             <Route path="/about-us" element={<AboutUsPanel />} />
+            <Route path="/contact-us" element={<ContactUsPanel />} />
           </Routes>
         </div>
         <Footer />

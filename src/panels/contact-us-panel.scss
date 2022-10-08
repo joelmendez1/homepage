@@ -1,0 +1,8 @@
+@import "../app-components/variables.scss";
+
+.contact-us-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: $max-size-xl;
+}

@@ -24,7 +24,7 @@ function Navbar() {
           />
           <LinkComponent
             text="Contact Us"
-            url=""
+            url="/contact-us"
             className="navbar__container__buttons__link"
           />
         </nav>

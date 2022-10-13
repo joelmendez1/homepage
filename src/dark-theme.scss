@@ -1,7 +1,7 @@
 @import "../src/app-components/variables.scss";
 
 .dark-theme {
-  background: rgb(37 42 45 / 98%);
+  background: $dark-violet;
   color: $very-light-gray;
 
   .header,
@@ -10,14 +10,31 @@
     color: $very-light-gray;
   }
 
-  .card,
   .navbar {
-    background-color: $black;
+    background-color: $very-dark-violet;
+    box-shadow: 0 $space-xs $space-s $secondary-rgb-shadow-color;
+    border-bottom: solid 1px $violet;
+  }
+
+  .card {
+    background-color: $very-dark-violet;
+    box-shadow: 0 10px 40px 10px $secondary-rgb-shadow-color;
+
+    &.border {
+      box-shadow: 0 $space-xs $space-s $secondary-rgb-shadow-color;
+    }
+  }
+
+  .footer {
+    border-top: solid 1px $violet;
+    &__separator {
+      opacity: 1;
+    }
   }
 
   .separator,
   .stats-info__second-column,
   .card.border {
-    border-color: $dark-gray;
+    border-color: $violet;
   }
 }

@@ -12,7 +12,7 @@ function Navbar() {
             src=""
             alt="project busters logo"
             className="navbar__logo-container__image"
-          ></img>
+          />
           <h1 className="navbar__logo-container__title">Project Busters</h1>
         </Link>
 

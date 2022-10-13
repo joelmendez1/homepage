@@ -9,11 +9,7 @@ function Footer() {
       <div className="footer__container">
         <div className="footer__container__top">
           <div className="footer__container__left">
-            <img
-              src=""
-              className="footer__logo"
-              alt="project busters logo"
-            ></img>
+            <img src="" className="footer__logo" alt="project busters logo" />
             <h2 className="footer__container__title">
               Powered By Project Busters
             </h2>

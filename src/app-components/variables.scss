@@ -27,33 +27,25 @@ $font-weight-m: 600;
 $font-weight-l: 900;
 
 // COLORS
-$primary-color: #01b1b4;
-$secondary-color: #017f81;
+$primary-color: #8247e5;
+$secondary-color: #5a1cc4;
 $tertiary-color: #1f7ad4;
 $primary-rgba-color: rgba(
-  1,
-  127,
-  129,
+  130,
+  71,
+  229,
   0.1
 ); // Primary color in rgba format with opacity 0.1.
-$primary-rgb-shadow-color: rgb(1 127 129 / 35%);
-$secondary-rgb-shadow-color: rgb(189 197 209 / 20%);
+
+$primary-rgb-shadow-color: rgb(189 197 209 / 20%);
+$secondary-rgb-shadow-color: rgb(4 76 124 / 20%);
 
 $white: #ffffff;
+
 $very-light-gray: #e9ecef;
 $light-gray: #77838f;
 $gray: #6c757e;
-$dark-gray: #4a4f55;
-$very-dark-gray: #363c40;
-$black: #252a2d;
 
-// TAGS COLORS
-
-$primary-warning-color: #744210;
-$secondary-warning-color: #fefcbf;
-
-$primary-success-color: #22543d;
-$secondary-success-color: #c6f6d5;
-
-$primary-error-color: #822727;
-$secondary-error-color: #fed7d7;
+$violet: #1e004f;
+$dark-violet: #140035;
+$very-dark-violet: #11002d;

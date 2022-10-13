@@ -2,20 +2,21 @@
 
 .darkmode-button {
   margin-right: $space-xs;
-  background: $dark-gray;
+  background: $violet;
   color: $white;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   font-size: $font-size-xs;
-  padding: $space-xxs;
+  padding: $space-xs;
   cursor: pointer;
 
   &:hover {
     transition: 0.4s;
-    color: $black;
-    background: $very-light-gray;
-    box-shadow: 0 4px 11px $gray;
+    color: $very-dark-violet;
+    background: $primary-color;
+    box-shadow: 0 4px 11px $secondary-color;
   }
+
   &__icon {
     width: 1rem;
     height: 1rem;

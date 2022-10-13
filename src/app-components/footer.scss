@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   font-size: $font-size-s;
-  background-color: $black;
+  background-color: $very-dark-violet;
   color: $white;
   padding-top: $space-m;
   padding-bottom: $space-m;
@@ -22,10 +22,9 @@
     height: $space-xl;
   }
 
-  &__metamask-conect-button,
   &__twitter-button {
     margin-right: $space-xs;
-    background: $dark-gray;
+    background: $violet;
     color: $white;
     border: 1px solid transparent;
     border-radius: $space-xxs;
@@ -36,9 +35,9 @@
 
     &:hover {
       transition: 0.4s;
-      color: $black;
+      color: $very-dark-violet;
       background: $very-light-gray;
-      box-shadow: 0 4px 11px $gray;
+      box-shadow: 0 4px 11px $secondary-rgb-shadow-color;
     }
   }
 

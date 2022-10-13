@@ -1,7 +1,7 @@
 @import "../app-components/variables.scss";
 
 .card {
-  box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175);
+  box-shadow: 0 10px 40px 10px $primary-rgb-shadow-color;
   border-radius: $space-xs;
   padding: $space-s;
   margin: $space-xs;
@@ -13,11 +13,11 @@
 
   &.border {
     border: solid 1px #e7eaf3;
-    box-shadow: 0 $space-xs $space-s rgba(189, 197, 209, 0.2);
+    box-shadow: 0 $space-xs $space-s $primary-rgb-shadow-color;
   }
 
   &__title {
-    color: $dark-gray;
+    color: $violet;
     font-size: $font-size-s;
     font-weight: $font-weight-m;
     margin: 0;

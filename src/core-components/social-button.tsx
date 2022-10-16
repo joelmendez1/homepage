@@ -9,7 +9,7 @@ const socialUrls = {
 
 type socialNetwork = "twitter" | "linkedin" | "github" | "instagram";
 
-interface SocialButtonProps {
+export interface SocialButtonProps {
   type: socialNetwork;
   profile: string;
 }

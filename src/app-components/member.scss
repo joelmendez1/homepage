@@ -1,0 +1,42 @@
+@import "../app-components/variables.scss";
+
+.member {
+  width: 14rem;
+  align-items: center;
+
+  &__profile-pic {
+    height: 7rem;
+    width: 7rem;
+
+    border-radius: 50%;
+    box-shadow: 0 2px 7px $violet;
+  }
+
+  &__headers {
+    width: 14rem;
+
+    border-bottom: solid 1px $violet;
+    border-top: solid 1px $violet;
+
+    margin: 1rem 0;
+
+    > * {
+      padding: 0.25rem 0;
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+
+  &__social-links {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__download-button {
+    width: 100%;
+    margin-top: $space-xl;
+  }
+}

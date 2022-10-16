@@ -15,6 +15,7 @@ function AboutUsPanel() {
         { type: "github", profile: "lautarocesso" },
         { type: "instagram", profile: "lautaro27c" },
       ],
+      cvFileName: "LautaroCesso",
     },
     {
       fullname: "Joel Mendez",
@@ -24,6 +25,7 @@ function AboutUsPanel() {
         { type: "linkedin", profile: "joeleliasmendez" },
         { type: "github", profile: "joelmendez1" },
       ],
+      cvFileName: "",
     },
     {
       fullname: "Leonel Redigonda",
@@ -33,6 +35,7 @@ function AboutUsPanel() {
         { type: "linkedin", profile: "leonel-redigonda-809116194/" },
         { type: "github", profile: "Lredigonda" },
       ],
+      cvFileName: "",
     },
   ];
 

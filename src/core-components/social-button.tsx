@@ -25,6 +25,7 @@ const SocialButton = ({ type, profile }: SocialButtonProps) => {
       <img
         className={`social-button__icon ${type}`}
         src={`${window.location.origin}/${type}.svg`}
+        alt={`${type}-icon`}
       />
     </a>
   );

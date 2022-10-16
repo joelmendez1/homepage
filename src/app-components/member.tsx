@@ -10,6 +10,7 @@ export interface MemberProps {
   fullname: string;
   headline: string;
   socialNetworks: SocialButtonProps[];
+  cvFileName: string;
 }
 
 const Member = ({
@@ -17,13 +18,31 @@ const Member = ({
   fullname,
   headline,
   socialNetworks,
+  cvFileName,
 }: MemberProps) => {
+  const handleClick = () => {
+    // using Java Script method to get PDF file
+    fetch(`${cvFileName}.pdf`).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+
+        // Setting various property values
+        const alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = `${cvFileName}.pdf`;
+        alink.click();
+      });
+    });
+  };
+
   return (
     <Card withBorder className="member">
       <>
         <img
           className="member__profile-pic"
           src={`${window.location.origin}/${profilePic}`}
+          alt={fullname}
         />
 
         <div className="member__headers">
@@ -40,12 +59,7 @@ const Member = ({
           ))}
         </div>
 
-        <Button
-          className="member__download-button"
-          onClick={() => {
-            console.warn("TODO: Create download cv function");
-          }}
-        >
+        <Button className="member__download-button" onClick={handleClick}>
           Download CV
         </Button>
       </>

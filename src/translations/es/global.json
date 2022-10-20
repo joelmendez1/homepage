@@ -1,0 +1,13 @@
+{
+  "HEADER": {
+    "ABOUT_US": "Sobre nosotros",
+    "CONTACT_US": "Contactanos"
+  },
+  "ABOUT": {
+    "ABOUT_US": "Sobre nosotros",
+    "DOWNLOAD_CV": "Descargar CV"
+  },
+  "FOOTER": {
+    "POWERED_BY": "Desarrollado por"
+  }
+}

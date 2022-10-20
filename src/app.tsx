@@ -3,11 +3,13 @@ import { Route, Routes } from "react-router-dom";
 
 import Footer from "./app-components/footer";
 import Navbar from "./app-components/navbar";
-import "./app.scss";
-import "./dark-theme.scss";
+import { TranslationProvider } from "./context/translation-context";
 import AboutUsPanel from "./panels/about-us-panel";
 import ContactUsPanel from "./panels/contact-us-panel";
 import HomePanel from "./panels/home-panel";
+
+import "./app.scss";
+import "./dark-theme.scss";
 
 export const ThemeContext = createContext({
   theme: "",
@@ -28,18 +30,20 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, switchTheme }}>
-      <div className={`app ${theme}-theme`}>
-        <div className="app__wrapper">
-          <Navbar />
+      <TranslationProvider>
+        <div className={`app ${theme}-theme`}>
+          <div className="app__wrapper">
+            <Navbar />
 
-          <Routes>
-            <Route path="/" element={<HomePanel />} />
-            <Route path="/about-us" element={<AboutUsPanel />} />
-            <Route path="/contact-us" element={<ContactUsPanel />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<HomePanel />} />
+              <Route path="/about-us" element={<AboutUsPanel />} />
+              <Route path="/contact-us" element={<ContactUsPanel />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </TranslationProvider>
     </ThemeContext.Provider>
   );
 }

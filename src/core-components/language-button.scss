@@ -1,0 +1,25 @@
+@import "../app-components/variables.scss";
+
+.language-button {
+  width: 2rem;
+  display: flex;
+
+  background: none;
+  border: 1px solid $violet;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 2px 7px $violet;
+
+    > .language-button__image {
+      filter: saturate(2);
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

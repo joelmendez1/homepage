@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+
+import { countries, Translate } from "../utils/language-utils";
+
+import LanguageButton from "../core-components/language-button";
 import LinkComponent from "../core-components/link-component";
 
 import "./navbar.scss";
@@ -18,15 +22,23 @@ function Navbar() {
 
         <nav className="navbar__container__buttons">
           <LinkComponent
-            text="About Us"
+            text={Translate("HEADER.ABOUT_US")}
             url="/about-us"
             className="navbar__container__buttons__link"
           />
           <LinkComponent
-            text="Contact Us"
+            text={Translate("HEADER.CONTACT_US")}
             url="/contact-us"
             className="navbar__container__buttons__link"
           />
+          <div className="navbar__languages">
+            {countries.map(({ icon, language }) => (
+              <LanguageButton
+                key={`country-${icon}-language-${language}`}
+                country={{ icon, language }}
+              />
+            ))}
+          </div>
         </nav>
       </div>
     </header>

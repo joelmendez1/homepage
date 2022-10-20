@@ -1,3 +1,5 @@
+import { Translate } from "../utils/language-utils";
+
 import Member, { MemberProps } from "../app-components/member";
 import Card from "../core-components/card";
 import Header from "../core-components/header";
@@ -20,12 +22,13 @@ function AboutUsPanel() {
     {
       fullname: "Joel Mendez",
       headline: "React Developer",
-      profilePic: "default.jpeg",
+      profilePic: "jmendez.jpg",
       socialNetworks: [
         { type: "linkedin", profile: "joeleliasmendez" },
         { type: "github", profile: "joelmendez1" },
+        { type: "instagram", profile: "mendez_joel7" },
       ],
-      cvFileName: "",
+      cvFileName: "JoelMendezEN",
     },
     {
       fullname: "Leonel Redigonda",
@@ -43,7 +46,7 @@ function AboutUsPanel() {
     <div className="about-us-panel">
       <Card className="about-us-panel__card" withBorder>
         <>
-          <Header>About Us</Header>
+          <Header>{Translate("ABOUT.ABOUT_US")}</Header>
           <div className="about-us-panel__members">
             {membersProps.map((membersProp, index) => {
               const { fullname, profilePic } = membersProp;

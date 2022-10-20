@@ -1,3 +1,5 @@
+import { Translate } from "../utils/language-utils";
+
 import DarkModeButton from "../core-components/darkmode-button";
 import Separator from "../core-components/separator";
 
@@ -11,7 +13,7 @@ function Footer() {
           <div className="footer__container__left">
             <img src="" className="footer__logo" alt="project busters logo" />
             <h2 className="footer__container__title">
-              Powered By Project Busters
+              {Translate("FOOTER.POWERED_BY")} Project Busters
             </h2>
           </div>
           <div className="footer__container__right">

@@ -1,8 +1,11 @@
+import { Translate } from "../utils/language-utils";
+
 import Button from "../core-components/button";
 import Card from "../core-components/card";
 import SocialButton, {
   SocialButtonProps,
 } from "../core-components/social-button";
+
 import "./member.scss";
 
 export interface MemberProps {
@@ -60,7 +63,7 @@ const Member = ({
         </div>
 
         <Button className="member__download-button" onClick={handleClick}>
-          Download CV
+          {Translate("ABOUT.DOWNLOAD_CV")}
         </Button>
       </>
     </Card>

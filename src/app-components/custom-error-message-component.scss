@@ -1,0 +1,11 @@
+@import "../app-components/variables.scss";
+
+.error-message {
+  color: $dark-red;
+
+  align-self: flex-start;
+  text-align: start;
+
+  padding-top: $space-xs;
+  margin: 0;
+}

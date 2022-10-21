@@ -74,6 +74,10 @@
     &__left {
       width: 50%;
       display: flex;
+      align-items: baseline;
+
+      filter: drop-shadow(rgba(233, 236, 239, 0.3) 2px -2px 2px)
+        drop-shadow(rgba(233, 236, 239, 0.3) 2px -2px 2px);
     }
 
     &__right {
@@ -85,8 +89,9 @@
 
     &__title {
       font-weight: $font-weight-s;
-      margin-left: $font-size-m;
       font-size: $font-size-m;
+
+      margin: 0;
     }
 
     &__copyright {

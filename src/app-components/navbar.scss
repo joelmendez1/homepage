@@ -44,9 +44,14 @@
 
   &__logo-container {
     display: flex;
-    margin: $space-xs;
-    align-items: center;
+    align-items: baseline;
+
     text-decoration: none;
+
+    margin: $space-xs;
+
+    filter: drop-shadow(rgba(0, 0, 0, 0.3) 2px -2px 2px)
+      drop-shadow(rgba(0, 0, 0, 0.3) 2px -2px 2px);
 
     &:visited {
       text-decoration: none;

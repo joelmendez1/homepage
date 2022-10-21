@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import { countries, Translate } from "../utils/language-utils";
 
+import logo from "../assets/logo.png";
 import LanguageButton from "../core-components/language-button";
 import LinkComponent from "../core-components/link-component";
 
@@ -13,7 +14,7 @@ function Navbar() {
       <div className="navbar__container">
         <Link className="navbar__logo-container" to="/">
           <img
-            src=""
+            src={logo}
             alt="project busters logo"
             className="navbar__logo-container__image"
           />

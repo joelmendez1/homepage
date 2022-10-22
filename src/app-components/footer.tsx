@@ -1,6 +1,5 @@
 import { Translate } from "../utils/language-utils";
 
-import logo from "../assets/logo.png";
 import DarkModeButton from "../core-components/darkmode-button";
 import Separator from "../core-components/separator";
 
@@ -13,7 +12,7 @@ const Footer = () => {
         <div className="footer__container__top">
           <div className="footer__container__left">
             <img
-              src={logo}
+              src={`${window.location.origin}/logo_transparent.png`}
               className="footer__logo"
               alt="project busters logo"
             />

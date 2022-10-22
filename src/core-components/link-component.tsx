@@ -9,13 +9,13 @@ interface LinkComponentProps {
   isExternal?: boolean;
 }
 
-function LinkComponent({
+const LinkComponent = ({
   url,
   text,
   elipsis,
   className,
   isExternal,
-}: LinkComponentProps) {
+}: LinkComponentProps) => {
   return isExternal ? (
     <a
       className={`link ${elipsis ? "elipsis" : ""} ${className}`}
@@ -30,6 +30,6 @@ function LinkComponent({
       {text}
     </Link>
   );
-}
+};
 
 export default LinkComponent;

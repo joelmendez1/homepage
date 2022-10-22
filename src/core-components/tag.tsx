@@ -7,12 +7,12 @@ interface TagProps {
   type: TagType;
 }
 
-function Tag({ text, type }: TagProps) {
+const Tag = ({ text, type }: TagProps) => {
   return (
     <span className={`tag tag__${type.toLowerCase()}`}>
       {text.toUpperCase()}
     </span>
   );
-}
+};
 
 export default Tag;

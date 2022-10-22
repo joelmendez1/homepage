@@ -3,7 +3,7 @@ import Card from "../core-components/card";
 
 import "./contact-us-panel.scss";
 
-function ContactUsPanel() {
+const ContactUsPanel = () => {
   return (
     <div className="contact-us-panel">
       <Card className="contact-us-panel__card" withBorder>
@@ -15,6 +15,6 @@ function ContactUsPanel() {
       </Card>
     </div>
   );
-}
+};
 
 export default ContactUsPanel;

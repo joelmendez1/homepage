@@ -9,7 +9,9 @@ export interface LanguageButtonProps {
   country: Country;
 }
 
-function LanguageButton({ country: { icon, language } }: LanguageButtonProps) {
+const LanguageButton = ({
+  country: { icon, language },
+}: LanguageButtonProps) => {
   const { switchLanguage } = useContext(TranslationContext);
 
   return (
@@ -24,6 +26,6 @@ function LanguageButton({ country: { icon, language } }: LanguageButtonProps) {
       />
     </button>
   );
-}
+};
 
 export default LanguageButton;

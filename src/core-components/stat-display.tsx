@@ -22,14 +22,14 @@ interface StatDisplayProps {
   type?: StatType;
 }
 
-function StatDisplay({
+const StatDisplay = ({
   className,
   img,
   title,
   link,
   text,
   type,
-}: StatDisplayProps) {
+}: StatDisplayProps) => {
   const { src, alt } = img;
 
   return (
@@ -55,6 +55,6 @@ function StatDisplay({
       </div>
     </div>
   );
-}
+};
 
 export default StatDisplay;

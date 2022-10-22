@@ -6,7 +6,7 @@ import Header from "../core-components/header";
 
 import "./about-us-panel.scss";
 
-function AboutUsPanel() {
+const AboutUsPanel = () => {
   const membersProps: MemberProps[] = [
     {
       fullname: "Lautaro Cesso",
@@ -63,6 +63,6 @@ function AboutUsPanel() {
       </Card>
     </div>
   );
-}
+};
 
 export default AboutUsPanel;

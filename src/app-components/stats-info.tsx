@@ -3,7 +3,7 @@ import StatDisplay from "../core-components/stat-display";
 
 import "./stats-info.scss";
 
-function StatsInfo() {
+const StatsInfo = () => {
   return (
     <div className="stats-info">
       <div className="stats-info__first-column">
@@ -60,6 +60,6 @@ function StatsInfo() {
       </div>
     </div>
   );
-}
+};
 
 export default StatsInfo;

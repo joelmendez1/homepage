@@ -16,7 +16,7 @@ export const ThemeContext = createContext({
   switchTheme: () => {},
 });
 
-function App() {
+const App = () => {
   const localStoregeTheme = localStorage.getItem("theme");
   const [theme, setTheme] = useState(
     localStoregeTheme ? localStoregeTheme : "light"
@@ -46,6 +46,6 @@ function App() {
       </TranslationProvider>
     </ThemeContext.Provider>
   );
-}
+};
 
 export default App;

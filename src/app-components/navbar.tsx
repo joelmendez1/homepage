@@ -8,7 +8,7 @@ import LinkComponent from "../core-components/link-component";
 
 import "./navbar.scss";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar__container">
@@ -44,6 +44,6 @@ function Navbar() {
       </div>
     </header>
   );
-}
+};
 
 export default Navbar;

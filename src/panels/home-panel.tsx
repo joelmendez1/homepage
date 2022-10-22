@@ -3,7 +3,7 @@ import Card from "../core-components/card";
 
 import "./home-panel.scss";
 
-function HomePage() {
+const HomePage = () => {
   return (
     <div className="home-panel">
       <Card className="first-card" withBorder>
@@ -14,6 +14,6 @@ function HomePage() {
       </Card>
     </div>
   );
-}
+};
 
 export default HomePage;

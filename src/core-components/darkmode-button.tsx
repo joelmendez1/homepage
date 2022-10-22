@@ -7,7 +7,7 @@ import { ThemeContext } from "../app";
 
 import "../core-components/darkmode-button.scss";
 
-function DarkModeButton() {
+const DarkModeButton = () => {
   const { theme, switchTheme } = useContext(ThemeContext);
 
   const toggleDarkMode = () => {
@@ -22,5 +22,5 @@ function DarkModeButton() {
       />
     </button>
   );
-}
+};
 export default DarkModeButton;

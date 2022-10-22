@@ -8,7 +8,7 @@ interface CardProps {
   withBorder?: boolean;
 }
 
-function Card({ children, title, className, withBorder }: CardProps) {
+const Card = ({ children, title, className, withBorder }: CardProps) => {
   return (
     <div
       className={`card ${withBorder ? "border" : ""} ${
@@ -20,6 +20,6 @@ function Card({ children, title, className, withBorder }: CardProps) {
       {children}
     </div>
   );
-}
+};
 
 export default Card;

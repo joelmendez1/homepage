@@ -1,12 +1,12 @@
 import { Translate } from "../utils/language-utils";
 
-import Member, { MemberProps } from "../app-components/member";
-import Card from "../core-components/card";
-import Header from "../core-components/header";
+import { Member, MemberProps } from "../app-components/member";
+import { Card } from "../core-components/card";
+import { Header } from "../core-components/header";
 
 import "./about-us-panel.scss";
 
-const AboutUsPanel = () => {
+export const AboutUsPanel = () => {
   const membersProps: MemberProps[] = [
     {
       fullname: "Lautaro Cesso",
@@ -64,5 +64,3 @@ const AboutUsPanel = () => {
     </div>
   );
 };
-
-export default AboutUsPanel;

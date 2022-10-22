@@ -1,7 +1,7 @@
 import { ErrorMessage, Field } from "formik";
 import { ReactNode } from "react";
 
-import CustomErrorMessageComponent from "../app-components/custom-error-message-component";
+import { CustomErrorMessageComponent } from "../app-components/custom-error-message-component";
 
 import "./form-field.scss";
 
@@ -19,7 +19,7 @@ interface FormFieldProps {
   children?: ReactNode;
 }
 
-const FormField = ({
+export const FormField = ({
   label,
   name,
   labelClassName = "",
@@ -48,4 +48,3 @@ const FormField = ({
     </div>
   );
 };
-export default FormField;

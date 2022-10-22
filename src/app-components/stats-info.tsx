@@ -1,9 +1,9 @@
-import Separator from "../core-components/separator";
-import StatDisplay from "../core-components/stat-display";
+import { Separator } from "../core-components/separator";
+import { StatDisplay } from "../core-components/stat-display";
 
 import "./stats-info.scss";
 
-const StatsInfo = () => {
+export const StatsInfo = () => {
   return (
     <div className="stats-info">
       <div className="stats-info__first-column">
@@ -61,5 +61,3 @@ const StatsInfo = () => {
     </div>
   );
 };
-
-export default StatsInfo;

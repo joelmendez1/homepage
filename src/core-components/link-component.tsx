@@ -9,7 +9,7 @@ interface LinkComponentProps {
   isExternal?: boolean;
 }
 
-const LinkComponent = ({
+export const LinkComponent = ({
   url,
   text,
   elipsis,
@@ -31,5 +31,3 @@ const LinkComponent = ({
     </Link>
   );
 };
-
-export default LinkComponent;

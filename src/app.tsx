@@ -1,12 +1,12 @@
 import { createContext, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Footer from "./app-components/footer";
-import Navbar from "./app-components/navbar";
+import { Footer } from "./app-components/footer";
+import { Navbar } from "./app-components/navbar";
 import { TranslationProvider } from "./context/translation-context";
-import AboutUsPanel from "./panels/about-us-panel";
-import ContactUsPanel from "./panels/contact-us-panel";
-import HomePanel from "./panels/home-panel";
+import { AboutUsPanel } from "./panels/about-us-panel";
+import { ContactUsPanel } from "./panels/contact-us-panel";
+import { HomePanel } from "./panels/home-panel";
 
 import "./app.scss";
 import "./dark-theme.scss";
@@ -16,7 +16,7 @@ export const ThemeContext = createContext({
   switchTheme: () => {},
 });
 
-const App = () => {
+export const App = () => {
   const localStoregeTheme = localStorage.getItem("theme");
   const [theme, setTheme] = useState(
     localStoregeTheme ? localStoregeTheme : "light"
@@ -47,5 +47,3 @@ const App = () => {
     </ThemeContext.Provider>
   );
 };
-
-export default App;

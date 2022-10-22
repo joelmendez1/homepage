@@ -22,7 +22,7 @@ interface StatDisplayProps {
   type?: StatType;
 }
 
-const StatDisplay = ({
+export const StatDisplay = ({
   className,
   img,
   title,
@@ -56,5 +56,3 @@ const StatDisplay = ({
     </div>
   );
 };
-
-export default StatDisplay;

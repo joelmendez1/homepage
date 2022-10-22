@@ -6,7 +6,7 @@ export interface SeparatorProps {
   margin?: MarginType;
 }
 
-const Separator = ({ className, margin }: SeparatorProps) => {
+export const Separator = ({ className, margin }: SeparatorProps) => {
   return (
     <hr
       className={`separator separator__margin-${
@@ -15,5 +15,3 @@ const Separator = ({ className, margin }: SeparatorProps) => {
     />
   );
 };
-
-export default Separator;

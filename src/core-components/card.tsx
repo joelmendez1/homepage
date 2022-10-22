@@ -1,5 +1,5 @@
 import "./card.scss";
-import Separator from "./separator";
+import { Separator } from "./separator";
 
 interface CardProps {
   children: JSX.Element;
@@ -8,7 +8,7 @@ interface CardProps {
   withBorder?: boolean;
 }
 
-const Card = ({ children, title, className, withBorder }: CardProps) => {
+export const Card = ({ children, title, className, withBorder }: CardProps) => {
   return (
     <div
       className={`card ${withBorder ? "border" : ""} ${
@@ -21,5 +21,3 @@ const Card = ({ children, title, className, withBorder }: CardProps) => {
     </div>
   );
 };
-
-export default Card;

@@ -14,7 +14,7 @@ export interface SocialButtonProps {
   profile: string;
 }
 
-const SocialButton = ({ type, profile }: SocialButtonProps) => {
+export const SocialButton = ({ type, profile }: SocialButtonProps) => {
   return (
     <a
       target="_blank"
@@ -30,5 +30,3 @@ const SocialButton = ({ type, profile }: SocialButtonProps) => {
     </a>
   );
 };
-
-export default SocialButton;

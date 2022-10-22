@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 import { countries, Translate } from "../utils/language-utils";
 
-import LanguageButton from "../core-components/language-button";
-import LinkComponent from "../core-components/link-component";
+import { LanguageButton } from "../core-components/language-button";
+import { LinkComponent } from "../core-components/link-component";
 
 import "./navbar.scss";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar__container">
@@ -44,5 +44,3 @@ const Navbar = () => {
     </header>
   );
 };
-
-export default Navbar;

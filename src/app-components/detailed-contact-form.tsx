@@ -11,12 +11,12 @@ import {
   TIME_AVAILABILITY,
 } from "./contact-form-utils";
 
-import Button from "../core-components/button";
-import FormField from "../core-components/form-field";
+import { Button } from "../core-components/button";
+import { FormField } from "../core-components/form-field";
 
 import "./detailed-contact-form.scss";
 
-const DetailedContactForm = () => {
+export const DetailedContactForm = () => {
   return (
     <Formik
       initialValues={INITIAL_DETAILED_CONTACT_FORM_VALUES}
@@ -131,5 +131,3 @@ const DetailedContactForm = () => {
     </Formik>
   );
 };
-
-export default DetailedContactForm;

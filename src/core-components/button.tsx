@@ -1,6 +1,6 @@
 import "./button.scss";
 
-const Button = ({
+export const Button = ({
   className,
   children,
   ...props
@@ -14,5 +14,3 @@ const Button = ({
     </button>
   );
 };
-
-export default Button;

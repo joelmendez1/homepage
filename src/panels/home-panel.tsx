@@ -1,9 +1,9 @@
-import StatsInfo from "../app-components/stats-info";
-import Card from "../core-components/card";
+import { StatsInfo } from "../app-components/stats-info";
+import { Card } from "../core-components/card";
 
 import "./home-panel.scss";
 
-const HomePage = () => {
+export const HomePanel = () => {
   return (
     <div className="home-panel">
       <Card className="first-card" withBorder>
@@ -15,5 +15,3 @@ const HomePage = () => {
     </div>
   );
 };
-
-export default HomePage;

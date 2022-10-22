@@ -1,8 +1,9 @@
 import { Translate } from "../utils/language-utils";
 
-import Button from "../core-components/button";
-import Card from "../core-components/card";
-import SocialButton, {
+import { Button } from "../core-components/button";
+import { Card } from "../core-components/card";
+import {
+  SocialButton,
   SocialButtonProps,
 } from "../core-components/social-button";
 
@@ -16,7 +17,7 @@ export interface MemberProps {
   cvFileName: string;
 }
 
-const Member = ({
+export const Member = ({
   profilePic,
   fullname,
   headline,
@@ -66,5 +67,3 @@ const Member = ({
     </Card>
   );
 };
-
-export default Member;

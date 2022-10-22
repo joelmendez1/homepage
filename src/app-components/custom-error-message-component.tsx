@@ -1,6 +1,6 @@
 import "./custom-error-message-component.scss";
 
-const CustomErrorMessageComponent = ({
+export const CustomErrorMessageComponent = ({
   children,
   className = "",
 }: React.DetailedHTMLProps<
@@ -9,5 +9,3 @@ const CustomErrorMessageComponent = ({
 >) => {
   return <p className={`error-message ${className}`}>{children}</p>;
 };
-
-export default CustomErrorMessageComponent;

@@ -7,7 +7,7 @@ import global_en from "./translations/en/global.json";
 import global_es from "./translations/es/global.json";
 import { currentLanguage, userLanguage } from "./utils/language-utils";
 
-import App from "./app";
+import { App } from "./app";
 
 import "./index.scss";
 

@@ -1,9 +1,9 @@
-import DetailedContactForm from "../app-components/detailed-contact-form";
-import Card from "../core-components/card";
+import { DetailedContactForm } from "../app-components/detailed-contact-form";
+import { Card } from "../core-components/card";
 
 import "./contact-us-panel.scss";
 
-const ContactUsPanel = () => {
+export const ContactUsPanel = () => {
   return (
     <div className="contact-us-panel">
       <Card className="contact-us-panel__card" withBorder>
@@ -16,5 +16,3 @@ const ContactUsPanel = () => {
     </div>
   );
 };
-
-export default ContactUsPanel;

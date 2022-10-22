@@ -24,14 +24,11 @@ const Member = ({
   cvFileName,
 }: MemberProps) => {
   const handleClick = () => {
-    // using Java Script method to get PDF file
-    fetch(`${cvFileName}.pdf`).then((response) => {
+    fetch(`/member-resumes/${cvFileName}.pdf`).then((response) => {
       response.blob().then((blob) => {
-        // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
-
-        // Setting various property values
         const alink = document.createElement("a");
+
         alink.href = fileURL;
         alink.download = `${cvFileName}.pdf`;
         alink.click();
@@ -44,7 +41,7 @@ const Member = ({
       <>
         <img
           className="member__profile-pic"
-          src={`${window.location.origin}/${profilePic}`}
+          src={`${window.location.origin}/member-pictures/${profilePic}`}
           alt={fullname}
         />
 

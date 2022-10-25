@@ -1,7 +1,6 @@
 import { Translate } from "../utils/language-utils";
 
-import { DarkModeButton } from "../core-components/darkmode-button";
-import { Separator } from "../core-components/separator";
+import { DarkModeButton, Separator } from "../core-components";
 
 import "./footer.scss";
 

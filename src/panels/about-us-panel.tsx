@@ -1,8 +1,7 @@
 import { Translate } from "../utils/language-utils";
 
-import { Member, MemberProps } from "../app-components/member";
-import { Card } from "../core-components/card";
-import { Header } from "../core-components/header";
+import { Member, MemberProps } from "../app-components";
+import { Card, Header } from "../core-components";
 
 import "./about-us-panel.scss";
 

@@ -1,11 +1,11 @@
 import { Translate } from "../utils/language-utils";
 
-import { Button } from "../core-components/button";
-import { Card } from "../core-components/card";
 import {
+  Card,
   SocialButton,
   SocialButtonProps,
-} from "../core-components/social-button";
+  Button,
+} from "../core-components";
 
 import "./member.scss";
 

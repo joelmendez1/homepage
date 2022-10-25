@@ -1,12 +1,10 @@
 import { createContext, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { Footer } from "./app-components/footer";
-import { Navbar } from "./app-components/navbar";
+import { Footer, Navbar } from "./app-components";
+
 import { TranslationProvider } from "./context/translation-context";
-import { AboutUsPanel } from "./panels/about-us-panel";
-import { ContactUsPanel } from "./panels/contact-us-panel";
-import { HomePanel } from "./panels/home-panel";
+import { AboutUsPanel, HomePanel, ContactUsPanel } from "./panels";
 
 import "./app.scss";
 import "./dark-theme.scss";

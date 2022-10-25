@@ -1,7 +1,7 @@
 import { ErrorMessage, Field } from "formik";
 import { ReactNode } from "react";
 
-import { CustomErrorMessageComponent } from "../app-components/custom-error-message-component";
+import { CustomErrorMessageComponent } from "../app-components";
 
 import "./form-field.scss";
 

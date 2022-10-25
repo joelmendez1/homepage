@@ -1,5 +1,4 @@
-import { Separator } from "../core-components/separator";
-import { StatDisplay } from "../core-components/stat-display";
+import { Separator, StatDisplay } from "../core-components";
 
 import "./stats-info.scss";
 

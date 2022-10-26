@@ -5,4 +5,46 @@
   display: flex;
   flex-direction: column;
   max-width: $max-size-xl;
+
+  &__technologies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    gap: $space-l;
+    flex-wrap: wrap;
+
+    &-description {
+      flex: 2;
+      padding: $space-xs;
+    }
+
+    &-title {
+      text-align: center;
+    }
+  }
+
+  &__technology-card {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: $max-size-l) {
+  .home-panel {
+    &__technologies {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      &-description {
+        text-align: center;
+        width: 100%;
+      }
+
+      &-title {
+        text-align: center;
+      }
+    }
+  }
 }

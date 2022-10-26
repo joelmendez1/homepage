@@ -10,3 +10,4 @@ export * from "./service-card";
 export * from "./services";
 export * from "./social-button";
 export * from "./stat-display";
+export * from "./technology-card";

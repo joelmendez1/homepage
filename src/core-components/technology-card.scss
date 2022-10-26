@@ -1,0 +1,40 @@
+@import "../app-components/variables.scss";
+
+.technology-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: $space-l;
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__image {
+    width: 13rem;
+    align-self: center;
+  }
+
+  &__technologies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: $space-xs;
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+}

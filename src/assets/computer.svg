@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 430">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ebe6ef;
+      }
+
+      .cls-3 {
+        mix-blend-mode: multiply;
+        opacity: 0.5;
+      }
+
+      .cls-4 {
+        fill: #4bb3fd;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="Warstwa_1" data-name="Warstwa 1">
+      <g>
+        <rect class="cls-2" x="27" y="54.94" width="376" height="274" rx="19.43"/>
+        <path class="cls-3" d="M39.89,309.51V74.37A19.43,19.43,0,0,1,59.32,54.94H46.43A19.43,19.43,0,0,0,27,74.37V309.51a19.43,19.43,0,0,0,19.43,19.43H59.32A19.43,19.43,0,0,1,39.89,309.51Z"/>
+        <path class="cls-2" d="M261,369.78l-13.81-11.89-7.59-29.05H190.36l-7.59,29.05L169,369.78a3,3,0,0,0,1.95,5.28h88.18A3,3,0,0,0,261,369.78Z"/>
+        <path class="cls-3" d="M194.14,358.09l7.65-29.25H190.36l-7.59,29.05L169,369.78a3,3,0,0,0,1.95,5.28h3.52Z"/>
+        <rect class="cls-4" x="52.9" y="80.85" width="324.19" height="189.08"/>
+        <path class="cls-3" d="M226.55,299.53A11.55,11.55,0,1,1,215,288,11.55,11.55,0,0,1,226.55,299.53Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

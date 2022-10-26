@@ -6,5 +6,7 @@ export * from "./header";
 export * from "./language-button";
 export * from "./link-component";
 export * from "./separator";
+export * from "./service-card";
+export * from "./services";
 export * from "./social-button";
 export * from "./stat-display";

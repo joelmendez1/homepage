@@ -1,0 +1,21 @@
+@import "../app-components/variables.scss";
+
+.services {
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: $space-xs;
+    padding: $space-s;
+
+    &__description {
+      font-size: $font-size-m;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

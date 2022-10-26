@@ -1,7 +1,7 @@
 import { Translate } from "../utils/language-utils";
 
 import { Member, MemberProps } from "../app-components";
-import { Card, Header } from "../core-components";
+import { Card, Header, ServiceCardProps, Services } from "../core-components";
 
 import "./about-us-panel.scss";
 
@@ -41,6 +41,27 @@ export const AboutUsPanel = () => {
     },
   ];
 
+  const services: ServiceCardProps[] = [
+    {
+      title: "Seguridad y velocidad",
+      text: "Nuestro Equipo ofrece soluciones que van de la mano con los estándares de velocidad y seguridad presentes en el mercado actual.",
+      iconUrl: "it-developer",
+    },
+    {
+      title: "Precios competitivos",
+      text: "Muchas otras consultoras nos piden apoyo o contratan nuestros servicios debido a que ofrecemos una propuesta de valor calidad/precio inigualable.",
+      iconUrl: "sale",
+    },
+    {
+      title: "Mejora continua",
+      text: "Entendemos que los sistemas y procesos requieren una mejora continua como parte del ciclo de vida del desarrollo.",
+      iconUrl: "consultation",
+    },
+  ];
+
+  const servicesDescription =
+    "Tenemos en cuenta un desarrollo escalable y diseñamos cada parte pensando en el crecimiento de su proyecto. Las interfaces son ciudadosamente planificadas por nuestro equipo UX siempre buscando la excelencia y perfección en cada proyecto.";
+
   return (
     <div className="about-us-panel">
       <Card className="about-us-panel__card" withBorder>
@@ -60,6 +81,11 @@ export const AboutUsPanel = () => {
           </div>
         </>
       </Card>
+      <Services
+        services={services}
+        description={servicesDescription}
+        header="SERVICES"
+      />
     </div>
   );
 };

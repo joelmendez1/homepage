@@ -1,8 +1,11 @@
-import "./card.scss";
+import { ReactNode } from "react";
+
 import { Separator } from "./separator";
 
+import "./card.scss";
+
 interface CardProps {
-  children: JSX.Element;
+  children: ReactNode;
   title?: string;
   className?: string;
   withBorder?: boolean;

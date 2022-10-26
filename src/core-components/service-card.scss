@@ -1,0 +1,33 @@
+@import "../app-components/variables.scss";
+
+.service-card {
+  max-width: 23rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+  &__icon {
+    width: 5rem;
+  }
+
+  &__title {
+    font-size: $font-size-l;
+    font-weight: $font-weight-m;
+
+    color: $tertiary-color;
+
+    border-bottom: 0.4rem solid $tertiary-color;
+
+    margin: $space-s $space-l;
+  }
+
+  &__text {
+    font-size: $font-size-m;
+
+    padding: 0 $space-l;
+    margin: 0 0 $space-s 0;
+
+    line-height: 1.8;
+  }
+}

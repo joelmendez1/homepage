@@ -1,4 +1,5 @@
 import { Form, Formik } from "formik";
+import emailjs from "@emailjs/browser";
 
 import {
   BUDGETS,
@@ -17,21 +18,25 @@ import { FormField } from "../core-components/form-field";
 import "./detailed-contact-form.scss";
 
 export const DetailedContactForm = () => {
+  const sendMail = (event: any) => {
+    console.log(event);
+    emailjs
+      .send("service_xjv5rvh", "template_44ivu2o", event, "r3VCf_dPvKsJ-MTYg")
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
   return (
     <Formik
       initialValues={INITIAL_DETAILED_CONTACT_FORM_VALUES}
       validationSchema={detailedContactFormValidationSchema}
-      onSubmit={(values, { resetForm }) => {
-        console.log("submited!", values);
-        resetForm({ values: INITIAL_DETAILED_CONTACT_FORM_VALUES });
-      }}
+      // onSubmit={(values, { resetForm }) => {
+      //   console.log("submited!", values);
+      //   resetForm({ values: INITIAL_DETAILED_CONTACT_FORM_VALUES });
+      // }}
+      onSubmit={sendMail}
     >
       {() => (
-        <Form
-          className="detailed-contact-form"
-          // action="https://formsubmit.co/leoredigonda@hotmail.com"
-          // method="POST"
-        >
+        <Form className="detailed-contact-form">
           <FormField
             label="First Name"
             name="firstName"

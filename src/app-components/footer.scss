@@ -107,6 +107,7 @@
   .footer__container {
     &__top {
       flex-direction: column;
+      gap: $space-s;
     }
 
     &__right,

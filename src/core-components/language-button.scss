@@ -12,7 +12,7 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 2px 7px $violet;
+    box-shadow: 0 4px 11px $violet;
 
     > .language-button__image {
       filter: saturate(2);

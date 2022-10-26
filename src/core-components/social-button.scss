@@ -23,6 +23,10 @@
     color: $very-dark-violet;
     background: $primary-color;
     box-shadow: 0 4px 11px $secondary-rgb-shadow-color;
+
+    .social-button__icon {
+      filter: unset;
+    }
   }
 
   &__icon {
@@ -39,10 +43,6 @@
     &.linkedin {
       width: 1.25rem;
       height: 1.25rem;
-    }
-
-    &:hover {
-      filter: unset;
     }
   }
 }

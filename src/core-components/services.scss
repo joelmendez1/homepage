@@ -12,10 +12,24 @@
     &__description {
       font-size: $font-size-m;
     }
+
+    &__header {
+      margin-left: 0;
+    }
   }
 
   &__cards-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $space-s;
+  }
+}
+
+@media screen and (max-width: $max-size-xl) {
+  .services {
+    &__cards-container {
+      justify-content: space-around;
+    }
   }
 }

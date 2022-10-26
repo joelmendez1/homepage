@@ -83,5 +83,9 @@
     &__logo-container__title {
       display: none;
     }
+
+    &__container__buttons {
+      gap: $space-s;
+    }
   }
 }

@@ -30,6 +30,12 @@
     }
   }
 
+  .language-button {
+    &:hover {
+      box-shadow: 0 4px 11px $primary-color;
+    }
+  }
+
   .footer {
     border-top: solid 1px $violet;
     &__separator {

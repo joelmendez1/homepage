@@ -1,13 +1,60 @@
 {
-  "HEADER": {
-    "ABOUT_US": "About us",
-    "CONTACT_US": "Contact us"
-  },
   "ABOUT": {
     "ABOUT_US": "About us",
     "DOWNLOAD_CV": "Download CV"
   },
   "FOOTER": {
     "POWERED_BY": "Powered By"
+  },
+  "FORM": {
+    "FIRST_NAME": "First name",
+    "LAST_NAME": "Last name",
+    "EMAIL": "Email address",
+    "DEVELOPMENT_STAGE": "What stage of development are you currently in?",
+    "PROJECT_TYPE": "Project type",
+    "PROJECT_SIZE": "Project size",
+    "TIME_AVAILABILITY": "Time availability",
+    "TIME_DEADLINE": "Time deadline",
+    "BUDGET": "Budget",
+    "COMMENTS": "Comments",
+    "SEND": "Send",
+    "LABELS": {
+      "INITIAL_DETAILED_CONTACT_FORM_VALUES": {
+        "STAGE": "Not applicable",
+        "TYPE": "Web desing",
+        "SIZE": "Small change or bug fixing",
+        "TIME": "As needed",
+        "BUDGET": "Less than USD 50",
+        "COMMENTS": ""
+      }
+    }
+  },
+  "HEADER": {
+    "ABOUT_US": "About us",
+    "CONTACT_US": "Contact us"
+  },
+  "HOME_PANEL": {
+    "HEADER": "Technologies we use",
+    "FIRST_PHRASE": "We offer custom web development platforms, made with the most powerful programming languages on the market.",
+    "SECOND_PHRASE": "We listen to you, and by working with agile methodologies we focusin making a prototype that fits your needs until you get a viable product.",
+    "TITLE": "TECHNOLOGIES"
+  },
+  "SERVICE": {
+    "HEADER": "SERVICES",
+    "SERVICE_DESCRIPTION": "We take care of aa scalable development and we design each part thinking about the growth of your project. The interfaces are carefully planned by our UX team, always seeking excellence and perfection in each project.",
+    "SERVICE_CARDS": {
+      "SECURITY_AND_FASTNESS": {
+        "TITLE": "Security and Fastness",
+        "TEXT": "Our Team offers solutions that go according with the speed and security standards present in the current market."
+      },
+      "COMPETITIVE_PRICES": {
+        "TITLE": "Competitive Prices",
+        "TEXT": "Many consultants ask us for support or hire our services because we offer an unbeatable quality/price value proposal."
+      },
+      "CONTINUOUS_IMPROVEMENT": {
+        "TITLE": "Continuous Improvement",
+        "TEXT": "We do understand that systems and require continuous improvement as part of the development lifecycle."
+      }
+    }
   }
 }

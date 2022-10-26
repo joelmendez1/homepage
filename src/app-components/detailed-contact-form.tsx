@@ -1,5 +1,6 @@
 import { Form, Formik } from "formik";
 import emailjs from "@emailjs/browser";
+import { Translate } from "../utils";
 
 import {
   BUDGETS,
@@ -38,21 +39,21 @@ export const DetailedContactForm = () => {
       {() => (
         <Form className="detailed-contact-form">
           <FormField
-            label="First Name"
+            label={Translate("FORM.FIRST_NAME")}
             name="firstName"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
           />
 
           <FormField
-            label="Last Name"
+            label={Translate("FORM.LAST_NAME")}
             name="lastName"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
           />
 
           <FormField
-            label="Email Address"
+            label={Translate("FORM.EMAIL")}
             name="address"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -60,7 +61,7 @@ export const DetailedContactForm = () => {
           />
 
           <FormField
-            label="What stage of development are currently in?"
+            label={Translate("FORM.DEVELOPMENT_STAGE")}
             name="stage"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -70,7 +71,7 @@ export const DetailedContactForm = () => {
           </FormField>
 
           <FormField
-            label="Project type"
+            label={Translate("FORM.PROJECT_TYPE")}
             name="type"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -80,7 +81,7 @@ export const DetailedContactForm = () => {
           </FormField>
 
           <FormField
-            label="Project Size"
+            label={Translate("FORM.PROJECT_SIZE")}
             name="size"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -90,7 +91,7 @@ export const DetailedContactForm = () => {
           </FormField>
 
           <FormField
-            label="Time availability"
+            label={Translate("FORM.TIME_AVAILABILITY")}
             name="time"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -100,7 +101,7 @@ export const DetailedContactForm = () => {
           </FormField>
 
           <FormField
-            label="Time Deadline"
+            label={Translate("FORM.TIME_DEADLINE")}
             name="deadline"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -108,7 +109,7 @@ export const DetailedContactForm = () => {
           />
 
           <FormField
-            label="Budget"
+            label={Translate("FORM.BUDGET")}
             name="budget"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__input"
@@ -118,7 +119,7 @@ export const DetailedContactForm = () => {
           </FormField>
 
           <FormField
-            label="Comments"
+            label={Translate("FORM.COMMENTS")}
             name="comments"
             labelClassName="detailed-contact-form__label"
             fieldClassName="detailed-contact-form__textarea"
@@ -129,7 +130,7 @@ export const DetailedContactForm = () => {
             type="submit"
             className="detailed-contact-form__submit-button"
           >
-            Send
+            {Translate("FORM.SEND")}
           </Button>
         </Form>
       )}

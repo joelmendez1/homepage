@@ -1,4 +1,4 @@
-import { Translate } from "../utils/language-utils";
+import { Translate } from "../utils";
 
 import {
   Card,

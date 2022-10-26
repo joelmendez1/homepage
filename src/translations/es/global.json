@@ -1,13 +1,60 @@
 {
-  "HEADER": {
-    "ABOUT_US": "Sobre nosotros",
-    "CONTACT_US": "Contactanos"
-  },
   "ABOUT": {
     "ABOUT_US": "Sobre nosotros",
     "DOWNLOAD_CV": "Descargar CV"
   },
   "FOOTER": {
     "POWERED_BY": "Desarrollado por"
+  },
+  "FORM": {
+    "FIRST_NAME": "Nombre",
+    "LAST_NAME": "Apellido",
+    "EMAIL": "Correo electrónico",
+    "DEVELOPMENT_STAGE": "¿Cuál es tu estado de desarrollo actual?",
+    "PROJECT_TYPE": "Tipo de projecto",
+    "PROJECT_SIZE": "Tamaño del projecto",
+    "TIME_AVAILABILITY": "Time availability",
+    "TIME_DEADLINE": "Plazo de entrega",
+    "BUDGET": "Presupuesto",
+    "COMMENTS": "Comentarios",
+    "SEND": "Enviar",
+    "LABELS": {
+      "INITIAL_DETAILED_CONTACT_FORM_VALUES": {
+        "STAGE": "No Aplicable",
+        "TYPE": "Diseño Web",
+        "SIZE": "Cambios pequeños o corrección de errores",
+        "TIME": "Según sea necesario",
+        "BUDGET": "Menos de USD 50",
+        "COMMENTS": ""
+      }
+    }
+  },
+  "HEADER": {
+    "ABOUT_US": "Sobre nosotros",
+    "CONTACT_US": "Contactanos"
+  },
+  "HOME_PANEL": {
+    "HEADER": "Tecnologías utilizadas",
+    "FIRST_PHRASE": "Ofrecemos plataformas de desarrollo web a la medida, realizadas con los lenguajes de programación más potentes del mercado.",
+    "SECOND_PHRASE": "Te escuchamos, y al trabajar con metodologías ágiles nos enfocamos en hacer un prototipo que funcione y vamos mejorando de la mano contigo hasta obtener un producto viable.",
+    "TITLE": "TECNOLOGÍAS"
+  },
+  "SERVICE": {
+    "HEADER": "SERVICIOS",
+    "SERVICE_DESCRIPTION": "Tenemos en cuenta un desarrollo escalable y diseñamos cada parte pensando en el crecimiento de su proyecto. Las interfaces son ciudadosamente planificadas por nuestro equipo UX siempre buscando la excelencia y perfección en cada proyecto.",
+    "SERVICE_CARDS": {
+      "SECURITY_AND_FASTNESS": {
+        "TITLE": "Seguridad y velocidad",
+        "TEXT": "Nuestro equipo ofrece soluciones que van de la mano con los estándares de velocidad y seguridad presentes en el mercado actual."
+      },
+      "COMPETITIVE_PRICES": {
+        "TITLE": "Precios Competitivos",
+        "TEXT": "Muchas otras consultoras nos piden apoyo o contratan nuestros servicios debido a que ofrecemos una propuesta de valor calidad/precio inigualable."
+      },
+      "CONTINUOUS_IMPROVEMENT": {
+        "TITLE": "Mejora Continua",
+        "TEXT": "Entendemos que los sistemas y procesos requieren una mejora continua como parte del ciclo de vida del desarrollo."
+      }
+    }
   }
 }

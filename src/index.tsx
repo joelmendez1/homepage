@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import global_en from "./translations/en/global.json";
 import global_es from "./translations/es/global.json";
-import { currentLanguage, userLanguage } from "./utils/language-utils";
+import { currentLanguage, userLanguage } from "./utils";
 
 import { App } from "./app";
 

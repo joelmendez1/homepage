@@ -1,4 +1,5 @@
 import { Header, TechnologyCard } from "../core-components";
+import { Translate } from "../utils";
 
 import "./home-panel.scss";
 
@@ -19,18 +20,17 @@ export const HomePanel = () => {
     <div className="home-panel">
       <div className="home-panel__technologies">
         <div className="home-panel__technologies-description">
-          <Header className="home-panel__technologies-title"> Tecnologias Utilizadas </Header>
+          <Header className="home-panel__technologies-title">
+            {Translate("HOME_PANEL.HEADER")}
+          </Header>
           <p>
-            Ofrecemos plataformas de desarrollo web a la medida, realizadas con
-            los lenguajes de programación más potentes del mercado. <br />
-            Te escuchamos, y al trabajar con metodologías ágiles nos enfocamos
-            en hacer un prototipo que funcione y vamos mejorando de la mano
-            contigo hasta obtener un producto viable.
+            {Translate("HOME_PANEL.FIRST_PHRASE")} <br />
+            {Translate("HOME_PANEL.SECOND_PHRASE")}
           </p>
         </div>
         <TechnologyCard
           className="home-panel__technology-card"
-          title="TECHNOLOGIES"
+          title={Translate("HOME_PANEL.TITLE")}
           technologies={technologyStack}
         />
       </div>

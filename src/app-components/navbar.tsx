@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { countries, Translate } from "../utils/language-utils";
+import { countries, Translate } from "../utils";
 
 import { LanguageButton, LinkComponent } from "../core-components";
 

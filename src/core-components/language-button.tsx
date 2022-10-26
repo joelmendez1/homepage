@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
 import { TranslationContext } from "../context/translation-context";
-import { Country } from "../utils/language-utils";
+import { Country } from "../utils";
 
 import "./language-button.scss";
 

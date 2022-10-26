@@ -1,4 +1,4 @@
-import { Translate } from "../utils/language-utils";
+import { Translate } from "../utils";
 
 import { Member, MemberProps } from "../app-components";
 import { Card, Header, ServiceCardProps, Services } from "../core-components";
@@ -43,24 +43,23 @@ export const AboutUsPanel = () => {
 
   const services: ServiceCardProps[] = [
     {
-      title: "Seguridad y velocidad",
-      text: "Nuestro Equipo ofrece soluciones que van de la mano con los estándares de velocidad y seguridad presentes en el mercado actual.",
+      title: Translate("SERVICE.SERVICE_CARDS.SECURITY_AND_FASTNESS.TITLE"),
+      text: Translate("SERVICE.SERVICE_CARDS.SECURITY_AND_FASTNESS.TEXT"),
       iconUrl: "it-developer",
     },
     {
-      title: "Precios competitivos",
-      text: "Muchas otras consultoras nos piden apoyo o contratan nuestros servicios debido a que ofrecemos una propuesta de valor calidad/precio inigualable.",
+      title: Translate("SERVICE.SERVICE_CARDS.COMPETITIVE_PRICES.TITLE"),
+      text: Translate("SERVICE.SERVICE_CARDS.COMPETITIVE_PRICES.TEXT"),
       iconUrl: "sale",
     },
     {
-      title: "Mejora continua",
-      text: "Entendemos que los sistemas y procesos requieren una mejora continua como parte del ciclo de vida del desarrollo.",
+      title: Translate("SERVICE.SERVICE_CARDS.CONTINUOUS_IMPROVEMENT.TITLE"),
+      text: Translate("SERVICE.SERVICE_CARDS.CONTINUOUS_IMPROVEMENT.TEXT"),
       iconUrl: "consultation",
     },
   ];
 
-  const servicesDescription =
-    "Tenemos en cuenta un desarrollo escalable y diseñamos cada parte pensando en el crecimiento de su proyecto. Las interfaces son ciudadosamente planificadas por nuestro equipo UX siempre buscando la excelencia y perfección en cada proyecto.";
+  const servicesDescription = Translate("SERVICE.SERVICE_DESCRIPTION");
 
   return (
     <div className="about-us-panel">
@@ -84,7 +83,7 @@ export const AboutUsPanel = () => {
       <Services
         services={services}
         description={servicesDescription}
-        header="SERVICES"
+        header={Translate("SERVICE.HEADER")}
       />
     </div>
   );
